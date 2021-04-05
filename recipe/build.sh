@@ -7,6 +7,7 @@ set -o pipefail
     CC_FOR_BUILD="${CC}" \
     --enable-shared \
     --disable-static \
+    --disable-doc \
     --disable-gtk-doc \
     --disable-gtk-doc-html \
     --disable-gtk-doc-pdf \

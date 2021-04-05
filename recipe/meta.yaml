@@ -1,4 +1,5 @@
 {% set version = "2.3.0" %}
+{% set sha256 = "e1cb1db3d2e249a6a3eb6f0946777c2e892d5c5dc7bd91c74394fc3a01cab8b5" %}
 
 package:
   name: libidn2
@@ -6,7 +7,7 @@ package:
 
 source:
   url: https://ftp.gnu.org/gnu/libidn/libidn2-{{ version }}.tar.gz
-  sha256: e1cb1db3d2e249a6a3eb6f0946777c2e892d5c5dc7bd91c74394fc3a01cab8b5
+  sha256: "{{ sha256 }}"
 
 build:
   skip: True  # [win]
@@ -22,13 +23,13 @@ requirements:
     - make
     - pkg-config
   host:
-    - gettext
     - libunistring
 
 test:
   commands:
     - test -f "${PREFIX}/include/idn2.h"
     - test -f "${PREFIX}/lib/libidn2${SHLIB_EXT}"
+    - test ! -f "${PREFIX}/lib/libidn2.a"
 
 about:
   home: "https://www.gnu.org/software/libidn/#libidn2"
@@ -39,5 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - hmaarrfk
-    # This recipe I got from
-    # - chenghlee
+    - chenghlee
