@@ -32,10 +32,13 @@ test:
     - test ! -f "${PREFIX}/lib/libidn2.a"
 
 about:
-  home: "https://www.gnu.org/software/libidn/#libidn2"
+  home: https://www.gnu.org/software/libidn/#libidn2
   license: LGPLv2 AND LGPL-3.0-or-later AND GPL-3.0-or-later
+  license_family: LGPL AND GPL
   license_file: COPYING
   summary: "Library for internationalized domain names (IDNA2008) support"
+  dev_url: https://gitlab.com/libidn/libidn2
+  doc_url: https://libidn.gitlab.io/libidn2/manual/libidn2.html
 
 extra:
   recipe-maintainers:
