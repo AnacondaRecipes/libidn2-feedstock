@@ -1,5 +1,5 @@
-{% set version = "2.3.1" %}
-{% set sha256 = "8af684943836b8b53965d5f5b6714ef13c26c91eaa36ce7d242e3d21f5d40f2d" %}
+{% set version = "2.3.2" %}
+{% set sha256 = "76940cd4e778e8093579a9d195b25fff5e936e9dc6242068528b437a76764f91" %}
 
 package:
   name: libidn2
@@ -32,10 +32,12 @@ test:
     - test ! -f "${PREFIX}/lib/libidn2.a"
 
 about:
-  home: "https://www.gnu.org/software/libidn/#libidn2"
+  home: https://www.gnu.org/software/libidn/#libidn2
   license: LGPLv2 AND LGPL-3.0-or-later AND GPL-3.0-or-later
   license_file: COPYING
   summary: "Library for internationalized domain names (IDNA2008) support"
+  dev_url: https://gitlab.com/libidn/libidn2
+  doc_url: https://libidn.gitlab.io/libidn2/manual/libidn2.html
 
 extra:
   recipe-maintainers:
