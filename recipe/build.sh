@@ -15,7 +15,8 @@ set -o pipefail
     --disable-code-coverage \
     --without-libiconv-prefix \
     --without-libintl-prefix \
-    --without-gcov
+    --without-gcov \
+    --with-included-libunistring
 
 make
 make check

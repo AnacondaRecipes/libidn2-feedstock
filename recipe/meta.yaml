@@ -1,5 +1,5 @@
-{% set version = "2.3.2" %}
-{% set sha256 = "76940cd4e778e8093579a9d195b25fff5e936e9dc6242068528b437a76764f91" %}
+{% set version = "2.3.4" %}
+{% set sha256 = "93caba72b4e051d1f8d4f5a076ab63c99b77faee019b72b9783b267986dbb45f" %}
 
 package:
   name: libidn2
@@ -22,8 +22,6 @@ requirements:
     - {{ compiler('c') }}
     - make
     - pkg-config
-  host:
-    - libunistring
 
 test:
   commands:
@@ -33,8 +31,10 @@ test:
 
 about:
   home: https://www.gnu.org/software/libidn/#libidn2
-  license: LGPLv2 AND LGPL-3.0-or-later AND GPL-3.0-or-later
+  license: LGPL-2.0 AND LGPL-3.0-or-later AND GPL-3.0-or-later
   license_file: COPYING
+  license_family: OTHER
+  description: "Library for internationalized domain names (IDNA2008) support"
   summary: "Library for internationalized domain names (IDNA2008) support"
   dev_url: https://gitlab.com/libidn/libidn2
   doc_url: https://libidn.gitlab.io/libidn2/manual/libidn2.html
