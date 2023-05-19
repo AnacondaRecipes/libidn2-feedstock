@@ -22,6 +22,8 @@ requirements:
     - {{ compiler('c') }}
     - make
     - pkg-config
+  host:
+    - libunistring
 
 test:
   commands:
