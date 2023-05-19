@@ -23,7 +23,7 @@ requirements:
     - make
     - pkg-config
   host:
-    - libunistring
+    - libunistring 0.9.10
 
 test:
   commands:
