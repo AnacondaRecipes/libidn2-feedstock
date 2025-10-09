@@ -26,7 +26,7 @@ requirements:
     - pkg-config
     - gnuconfig # [unix]
   host:
-    - gettext
+    - gettext >=0.19.8
     - libunistring 1.3
 
 test:
